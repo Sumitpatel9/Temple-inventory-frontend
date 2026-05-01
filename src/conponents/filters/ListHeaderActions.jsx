@@ -132,7 +132,7 @@ export default function ListHeaderActions({
         return (
           <select
             key={index}
-            className={`border border-gray-300 px-3 py-2 rounded text-gray-600 ${field.className || ""}`}
+            className={`border border-gray-300 px-3 py-2 rounded outline-none text-gray-600 ${field.className || ""}`}
             {...field.props}
           >
             <option value="Active">Active</option>
@@ -154,7 +154,7 @@ export default function ListHeaderActions({
               <Input
                 type="date"
                 onFocus={(e) => e.target.showPicker()}
-                className={`border border-gray-300 px-3 py-2 rounded text-sm w-full pr-8 cursor-pointer ${field.inputClass || ""}`}
+                className={`border border-gray-300 px-3 py-2 rounded text-sm w-full pr-8 outline-none cursor-pointer ${field.inputClass || ""}`}
                 {...field.props}
               />
 
@@ -193,7 +193,7 @@ export default function ListHeaderActions({
         return (
           <select
             key={index}
-            className={`border border-gray-300 px-3 py-2 w-50 rounded text-gray-600 ${field.className || ""}`}
+            className={`border border-gray-300 px-3 py-2 w-50 rounded outline-none text-gray-600 ${field.className || ""}`}
             {...field.props}
           >
             {field.options?.map((opt, i) => (

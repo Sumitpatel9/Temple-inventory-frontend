@@ -180,14 +180,14 @@ const Dashboard = () => {
       </div>
 
       {/* Tables Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 flex-1 min-h-[400px]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Recent Inwards */}
-        <div className="bg-white rounded-xl shadow-sm border border-gray-200 flex flex-col overflow-hidden">
+        <div className="bg-white rounded-xl shadow-sm border border-gray-200 flex flex-col" style={{ height: "360px" }}>
           <div className="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
             <h2 className="text-lg font-semibold text-gray-800">Recent Inwards</h2>
-            <Link to="/inward" className="text-sm text-blue-600 hover:underline">View All</Link>
+            <Link to="/inward" className="text-xs font-semibold text-orange-600 bg-orange-50 hover:bg-orange-100 px-3 py-1.5 rounded-lg transition-colors">View All</Link>
           </div>
-          <div className="flex-1 overflow-auto">
+          <div className="overflow-auto flex-1">
             <Table>
               <TableHeader
                 columns={[
@@ -223,12 +223,12 @@ const Dashboard = () => {
         </div>
 
         {/* Recent Outwards */}
-        <div className="bg-white rounded-xl shadow-sm border border-gray-200 flex flex-col overflow-hidden">
+        <div className="bg-white rounded-xl shadow-sm border border-gray-200 flex flex-col" style={{ height: "360px" }}>
           <div className="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
             <h2 className="text-lg font-semibold text-gray-800">Recent Outwards</h2>
-            <Link to="/outward" className="text-sm text-blue-600 hover:underline">View All</Link>
+            <Link to="/outward" className="text-xs font-semibold text-orange-600 bg-orange-50 hover:bg-orange-100 px-3 py-1.5 rounded-lg transition-colors">View All</Link>
           </div>
-          <div className="flex-1 overflow-auto">
+          <div className="overflow-auto flex-1">
             <Table>
               <TableHeader
                 columns={[
