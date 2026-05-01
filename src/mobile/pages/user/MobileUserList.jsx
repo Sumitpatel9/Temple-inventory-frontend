@@ -117,7 +117,7 @@ export default function MobileUserList() {
       <MobileFilterBar
         search={search} onSearchChange={(e) => setSearch(e.target.value)}
         status={statusFilter} onStatusChange={setStatusFilter}
-        onAdd={() => { setFormData(initialForm); setIsEditing(false); setErrors({}); setShowForm(true); }}
+        onAdd={() => { setFormData({ ...initialForm, userId: "USR-" + Date.now() }); setIsEditing(false); setErrors({}); setShowForm(true); }}
         onSortOpen={() => setShowSort(true)}
       />
 

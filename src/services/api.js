@@ -1,4 +1,4 @@
-export const serverip = "http://172.31.93.13:5000/api";
+export const serverip = "http://192.168.43.35:5000/api";
 // export const serverip = "http://192.168.1.8:5000/api";
 
 export const Api = {
@@ -53,4 +53,7 @@ export const Api = {
   slowMovingStock: serverip + "/stock/slow-moving",
   fastMovingStock: serverip + "/stock/fast-moving",
   dailyStockReport: serverip + "/stock/daily-stock-report",
+
+  //--DASHBOARD
+  dashboardSummary: serverip + "/dashboard/summary",
 };
