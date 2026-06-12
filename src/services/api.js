@@ -1,4 +1,4 @@
-export const serverip = "http://192.168.43.35:5000/api";
+export const serverip = "http://localhost:5000/api";
 // export const serverip = "http://192.168.1.8:5000/api";
 
 export const Api = {
