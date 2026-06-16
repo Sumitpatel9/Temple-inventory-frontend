@@ -1,4 +1,4 @@
-export const serverip = "http://localhost:5000/api";
+export const serverip = import.meta.env.VITE_API_URL;
 // export const serverip = "http://192.168.1.8:5000/api";
 
 export const Api = {
